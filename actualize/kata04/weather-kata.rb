@@ -50,21 +50,25 @@ contents_array.each do |row|
   index += 1 # Increment Contents_Array index
 end
 
-puts weather_data[0].inspect
+# puts weather_data[0].inspect
 
 # Initialize Variable to keep track of index with the smallest temperature spread. 
 loop_index = 0
 index_smallest_temp_spread = 0
 min_temp_spread = 99999
+small_temp_day = 0
 
 # Loop through WeatherData Array to determine Temperature spread of each row, Set tracking index variable if determined
 weather_data.each do |data|
+  # puts "Line : 0 #{data.inspect}"
+
   if (!data.empty?)
     temp_spread = data[:MxT].to_i - data[:MnT].to_i
+    puts "Min Spread for Day : #{data[:Dy]} = #{temp_spread}"
     # Spread is smaller than currently set value.
     if (temp_spread < min_temp_spread)
       min_temp_spread = temp_spread 
-      index_smallest_temp_spread = loop_index
+      small_temp_day = data[:Dy]
     end
     loop_index += 1
   end
@@ -72,7 +76,7 @@ end
 
 # Output the ID of the data index with the smallest spread.
 puts "The Weather data with the smallest Temperature spread is:"
-puts "Day : #{weather_data[index_smallest_temp_spread][:Dy]} with Temperature Spread of : #{min_temp_spread} Degrees"
+puts "Day : #{small_temp_day} with Temperature Spread of : #{min_temp_spread} Degrees"
 
 
 
