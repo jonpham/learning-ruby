@@ -61,7 +61,7 @@ small_temp_day = 0
 # Loop through WeatherData Array to determine Temperature spread of each row, Set tracking index variable if determined
 weather_data.each do |data|
   # puts "Line : 0 #{data.inspect}"
-
+  loop_index += 1
   if (!data.empty?)
     temp_spread = data[:MxT].to_i - data[:MnT].to_i
     puts "Min Spread for Day : #{data[:Dy]} = #{temp_spread}"
@@ -69,8 +69,9 @@ weather_data.each do |data|
     if (temp_spread < min_temp_spread)
       min_temp_spread = temp_spread 
       small_temp_day = data[:Dy]
+      index_smallest_temp_spread = loop_index
     end
-    loop_index += 1
+
   end
 end
 
