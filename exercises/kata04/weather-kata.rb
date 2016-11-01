@@ -1,3 +1,9 @@
+# Assumes the existence of a 'weather.dat' in the same directory with the following format:
+# Dy MxT   MnT   AvT   HDDay  AvDP 1HrP TPcpn WxType PDir AvSp Dir MxS SkyC MxR MnR AvSLP
+
+#  1  88    59    74          53.8       0.00 F       280  9.6 270  17  1.6  93 23 1004.5
+#  2  79    63    71          46.5       0.00         330  8.7 340  23  3.3  70 28 1004.5
+###########################
 # In weather.dat you’ll find daily weather data for Morristown, NJ for June 2002. 
 # Download this text file, then write a program to output the day number (column one) 
 # with the smallest temperature spread (the maximum temperature is the second column, 
