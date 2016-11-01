@@ -78,3 +78,55 @@ struct = StructClass.new("first_name","last_name")
 struct.each_pair do |key, value|
   puts "#{key} == #{value}" #Output each member's value to the console
 end
+
+
+### SETTER GETTER EXPANSION
+##########################################
+class Item
+  # Expands to Setter and Getter
+  attr_accessor :name , :description
+
+  # Expands to just Getters
+  attr_reader :name, :description
+end
+
+class Item
+  # Setters
+  def name 
+    @name
+  end
+  
+  def description
+    @description
+  end
+
+  # Getters
+  def name=(input_name)
+    @name = input_name
+  end
+
+  def description=(input_description)
+    @description = input_description
+  end
+
+end
+##########################################
+class Item
+  # Expands to just Getters
+  attr_reader :name, :description
+end
+
+class Item
+
+  # Getters
+  def name=(input_name)
+    @name = input_name
+  end
+
+  def description=(input_description)
+    @description = input_description
+  end
+  
+end
+##########################################
+
