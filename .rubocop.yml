@@ -1,0 +1,45 @@
+AllCops:
+  DisabledByDefault: true
+
+Style/IndentationConsistency:
+  EnforcedStyle: rails
+
+Style/IndentationWidth:
+  Width: 2
+
+Style/MethodDefParentheses:
+  EnforcedStyle: require_parentheses
+
+Style/MethodName:
+  EnforcedStyle: snake_case
+
+Style/VariableName:
+  EnforcedStyle: snake_case
+
+Style/VariableNumber:
+  EnforcedStyle: normalcase
+  
+Lint/AssignmentInCondition:
+  AllowSafeAssignment: true
+
+Lint/BlockAlignment:
+  AlignWith: either
+
+Lint/EndAlignment:
+  AlignWith: keyword
+  AutoCorrect: false
+
+Lint/DefEndAlignment:
+  AlignWith: start_of_line
+  AutoCorrect: false
+
+Lint/InheritException:
+  EnforcedStyle: runtime_error
+
+Lint/UnusedBlockArgument:
+  IgnoreEmptyBlocks: true
+  AllowUnusedKeywordArguments: false
+
+Lint/UnusedMethodArgument:
+  AllowUnusedKeywordArguments: false
+  IgnoreEmptyMethods: true
