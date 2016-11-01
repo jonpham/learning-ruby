@@ -1,6 +1,6 @@
 # Program : Guessing a Number
 
-def guessANumber()
+def guess_a_number()
   puts "I'm thinking of a number between 0-100, Tell me what you think it\nis & I'll tell you if you are right!"
   puts "Your Guess : "
   guess = gets.chomp.to_i
@@ -13,7 +13,7 @@ end
 
 # guessANumber
 
-def fortuneCookie()
+def fortune_cookie()
   puts "I am a famous fortune teller! Tell me your favorite \ninteger, and I'll tell you a fortune!"
   puts "Favorite Number : "
   guess = gets.chomp.to_i
@@ -26,7 +26,7 @@ def fortuneCookie()
   end
 end
 
-fortuneCookie
+fortune_cookie
 
 # Conditional Assignment Operator
 
