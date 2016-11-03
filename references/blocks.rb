@@ -45,7 +45,7 @@ end
 puts "my_name : #{my_name}"
 
 # Yield with Block passed in Boolean
-def get_name2(prompt, &block)
+def get_name2(prompt, &_block)
   print prompt + ": "
   name = gets.chomp
   print "Age: "

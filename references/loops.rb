@@ -36,7 +36,7 @@ def untils()
 
 end
 
-def modifierLoops()
+def modifier_loops()
   break_sentinel = "n"
   answer = ""
 
@@ -73,7 +73,7 @@ def foreach()
   end
 end
 
-def numTimes()
+def num_times()
   # <number>.times do ... end
   num_times = 6
   num_times.times do |i|
