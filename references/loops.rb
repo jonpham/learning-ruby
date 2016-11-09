@@ -66,6 +66,9 @@ def fors()
   end
 end
 
+string_example = "Hellow"
+string_example.split
+
 def foreach()
   # (expression).each do |variable[, variable...]| code end
   (0...5).each do |i|
