@@ -17,6 +17,7 @@ class AnagramChecker
     second_string.each_char { |char| 
       return false if char_hash[char] != true
     }
+    # Return true of previous conditions pass
     return true
   end
 
